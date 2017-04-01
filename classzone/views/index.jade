@@ -1,0 +1,13 @@
+extends layout
+
+//block content
+//  h1= title
+//  p Welcome to #{title}
+
+
+h1 Search Students
+form(method='POST', action='/students/search')
+  input(name='firstname', type='text', placeholder='Student Name')
+  br
+  input(type='submit')
+a(href='/students') Show All
